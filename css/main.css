@@ -1,0 +1,109 @@
+table thead th, table tbody td{
+    font-size: var(--mainText);
+}
+
+table thead th{
+    font-weight: 600 !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+/* Font Size */
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h4{
+    font-size: var(--mainTitle);
+}
+
+h5{
+    font-size: var(--subTitle);
+}
+
+p, h6{
+    font-size: var(--mainText);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+}
+
+.textSuccess{
+    color: var(--success);
+}
+
+.textDanger{
+    color: var(--danger);
+}
+
+.textMuted{
+    color: #8b91a9;
+    font-size: 13px;
+}
+
+.mainBorder{
+    border:var(--border);
+    border-radius: 4px;
+}
+
+.sectionTitle{
+    border-bottom: var(--border);
+}
+
+.sectionTitle h5{
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-shadow: 0 0 1px rgba(241,245,250,0.1);
+    font-family: "Poppins",sans-serif;
+    margin: 0;
+    color: var(--dark);
+}
+
+.badgeBtn a{
+    border-radius: 4px;
+    background-color: rgba(23,97,253,0.1);
+    color: var(--primary);
+    padding: 6px 8px;
+    font-size: 11px;
+}
+
+.badgeBtn a i{
+    margin-right: 5px;
+    font-size: 11px;
+}
+
+#leftSidebar .sideNav .mainNav .navItem .navLink, #leftSidebar .sideNav .mainNav .navItem .dropdownNav .dropdownNavItem .dropdownNavLink,
+#mainContent .navBar nav ul li a, #mainContent .contentTop .title .mainBreadcrumb ul li a, #mainContent .contentTop .dashDate a,
+#mainContent .sessions .leftSide h2, #mainContent .trafficSource .left span,#mainContent .sessionDevice  .date, #mainContent .footer .copyRight {
+    font-size: var(--mainText);
+}
+
+/* List Style */
+#leftSidebar .sideNav .mainNav .navTitle,#leftSidebar .sideNav .mainNav .navItem,#mainContent .contentTop .title .mainBreadcrumb ul li,
+#mainContent .activity .activityBody ul li{
+    list-style: none;
+}
+
+/* Scrollbar Css */
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 2px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+    width: 2px;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(42, 118, 244, 0.2);
+    border-radius: 4px;
+}

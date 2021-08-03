@@ -1,0 +1,18 @@
+:root{
+    /* Main Colors */
+    --primary:#1761fd;
+    --secondary:#7081b9;
+    --success:#03d87f;
+    --danger:#f5325c ;
+    --orange:#ffb822 ;
+    --dark:#2c3652;
+    --blueDark:#303e67;
+
+    /* Main Font Sizes */
+    --mainTitle:17px;
+    --subTitle:14px;
+    --mainText:13px;
+
+    /* Main Border */
+    --border:1px solid #d9e3f1;
+}

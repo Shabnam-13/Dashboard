@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- MDB for Chart -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css" rel="stylesheet"/>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/varaibles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="leftSidebar">
+    <div class="logo text-center mb-4">
+        <a href="#">
+            <img class="logoIcon" src="img/logo-sm.png" alt="logo">
+            <img class="logoName" src="img/logo-dark.png" alt="logo">
+        </a>
+    </div>
+    <div class="sideNav">
+        <ul class="mainNav p-0">
+            <li class="navTitle">Main</li>
+            <li class="navItem">
+                <a class="navLink" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+                <ul class="collapse dropdownNav" id="collapseExample1">
+                    <li class="dropdownNavItem">
+                        <a class="dropdownNavLink" href="#">Analytics</a>
+                    </li>
+                    <li class="dropdownNavItem">
+                        <a class="dropdownNavLink" href="#">Sales</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navItem">
+                <a class="navLink" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <i class="fab fa-sketch"></i>
+                    <span>Apps</span>
+                </a>
+                <ul class="collapse dropdownNav" id="collapseExample2">
+                    <li class="dropdownNavItem">
+                        <a class="dropdownNavLink" href="#">Email</a>
+                    </li>
+                    <li class="dropdownNavItem">
+                        <a class="dropdownNavLink" href="#">Chat</a>
+                    </li>
+                    <li class="dropdownNavItem">
+                        <a class="dropdownNavLink" href="#">Contact List</a>
+                    </li>
+                    <li class="dropdownNavItem">
+                        <a class="dropdownNavLink" href="#">Calendar</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navItem">
+                <a class="navLink" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <i class="fab fa-sketch"></i>
+                    <span>Authentication</span>
+                </a>
+                <ul class="collapse dropdownNav" id="collapseExample3">
+                    <li class="dropdownNavItem">
+                        <a class="dropdownNavLink" href="#">Log in</a>
+                    </li>
+                    <li class="dropdownNavItem">
+                        <a class="dropdownNavLink" href="#">Register</a>
+                    </li>
+                    <li class="dropdownNavItem">
+                        <a class="dropdownNavLink" href="#">Recover Password</a>
+                    </li>
+                    <li class="dropdownNavItem">
+                        <a class="dropdownNavLink" href="#">Lock Screen</a>
+                    </li>
+                </ul>
+            </li>
+            <hr>
+            <li class="navTitle">Components & Extra</li>
+            <li class="navItem">
+                <a class="navLink" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <i class="fab fa-sketch"></i>
+                    <span>UI Kit</span>
+                </a>
+                <ul class="collapse dropdownNav" id="collapseExample3">
+                    <li class="dropdownNavItem">
+                        <a class="dropdownNavLink" href="#">UI Element</a>
+                    </li>
+                    <li class="dropdownNavItem">
+                        <a class="dropdownNavLink" href="#">Advancced UI</a>
+                    </li>
+                    <li class="dropdownNavItem">
+                        <a class="dropdownNavLink" href="#">Forms</a>
+                    </li>
+                    <li class="dropdownNavItem">
+                        <a class="dropdownNavLink" href="#">Chart</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="themes mt-5 text-center">
+        <h5 class="mt-3 font-weight-bold">Mannat Themes</h5>
+        <p>We Design and Develop Clean and High Quality Web Applications</p>
+        <a href="#">Upgrade your plan</a>
+    </div>
+</div>
+<div id="mainContent">
+    <div class="navBar">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="d-flex align-items-center justify-content-between">
+                    <ul class="p-0 mb-0">
+                        <li class="navToggle">
+                            <a href="#">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </li>
+                        <li class="badgeBtn">
+                            <a href="#">
+                                <i class="fas fa-plus"></i>
+                                <span>New Task</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="p-0 mb-0">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="far fa-bell"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Nick</span>
+                                <img src="img/user-5.jpg" alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="contentTop d-flex justify-content-between">
+                    <div class="title">
+                        <h1 class="mb-0 font-weight-bold">Analytics</h1>
+                        <div class="mainBreadcrumb">
+                            <ul class="p-0">
+                                <li><a href="#">Dastone</a></li>
+                                <li class="active"><a href="#">Dashboard</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dashDate">
+                        <a class="mr-1" href="#">
+                            <span>Today: Dec 29</span>
+                            <i class="far fa-calendar"></i>
+                        </a>
+                        <a href="#">
+                            <i class="far fa-calendar"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="sessions mainBorder p-3 d-flex justify-content-between">
+                            <div class="leftSide">
+                                <h2 class="font-weight-bold">Sessions</h2>
+                                <h3>24k</h3>
+                                <aside class="mb-0 textMuted">
+                                    <span class="textSuccess"><i class="fas fa-sort-amount-up-alt"></i>8.5%</span>
+                                    <span>New Sessions today</span>
+                                </aside>
+                            </div>
+                            <div class="rightSide align-self-center">
+                                <div class="icon textMuted">
+                                    <i class="fas fa-user-friends"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="sessions mainBorder p-3 d-flex justify-content-between">
+                            <div class="leftSide">
+                                <h2 class="font-weight-bold">Sessions</h2>
+                                <h3>24k</h3>
+                                <aside class="mb-0 textMuted">
+                                    <span class="textSuccess"><i class="fas fa-sort-amount-up-alt"></i>8.5%</span>
+                                    <span>New Sessions today</span>
+                                </aside>
+                            </div>
+                            <div class="rightSide align-self-center">
+                                <div class="icon textMuted">
+                                    <i class="fas fa-user-friends"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="sessions mainBorder p-3 d-flex justify-content-between">
+                            <div class="leftSide">
+                                <h2 class="font-weight-bold">Sessions</h2>
+                                <h3>24k</h3>
+                                <aside class="mb-0 textMuted">
+                                    <span class="textSuccess"><i class="fas fa-sort-amount-up-alt"></i>8.5%</span>
+                                    <span>New Sessions today</span>
+                                </aside>
+                            </div>
+                            <div class="rightSide align-self-center">
+                                <div class="icon textMuted">
+                                    <i class="fas fa-user-friends"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="sessions mainBorder p-3 d-flex justify-content-between">
+                            <div class="leftSide">
+                                <h2 class="font-weight-bold">Sessions</h2>
+                                <h3>24k</h3>
+                                <aside class="mb-0 textMuted">
+                                    <span class="textDanger"><i class="fas fa-sort-amount-down-alt"></i>8.5%</span>
+                                    <span>New Sessions today</span>
+                                </aside>
+                            </div>
+                            <div class="rightSide align-self-center">
+                                <div class="icon textMuted">
+                                    <i class="fas fa-user-friends"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 mb-3">
+                        <div class="audience mainBorder">
+                            <div class="sectionTitle p-3">
+                                <h5>Audience Overview</h5>
+                            </div>
+                            <div class="audienceBody p-3">
+                                <canvas id="chart-line" height="84px"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <div class="sessionDevice mainBorder">
+                    <div class="sectionTitle p-3">
+                        <h5>Sessions Device</h5>
+                    </div>
+                    <div class="sessionDeviceBody p-3">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="date text-center ml-3 mr-3 pl-4 pr-4 pt-3 pb-3">
+                        <i class="far fa-calendar"></i>
+                        <span>01 January 2020 to 31 Decembner 2020</span>
+                    </div>
+                    <div class="table table-responsive p-3">
+                        <table class="w-100">
+                            <thead>
+                                <tr>
+                                    <th>Device</th>
+                                    <th class="text-right">Sassions</th>
+                                    <th class="text-right">Day</th>
+                                    <th class="text-right">Week</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Desktops</td>
+                                    <td class="text-right">1843</td>
+                                    <td class="text-right">-3</td>
+                                    <td class="text-right">-12</td>
+                                </tr>
+                                <tr>
+                                    <td>Tablets</td>
+                                    <td class="text-right">2543</td>
+                                    <td class="text-right">-5</td>
+                                    <td class="text-right">-2</td>
+                                </tr>
+                                <tr>
+                                    <td>Mobiles</td>
+                                    <td class="text-right">3654</td>
+                                    <td class="text-right">-5</td>
+                                    <td class="text-right">-6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 mb-3">
+                <div class="apexChart mainBorder">
+                    <div class="sectionTitle p-3">
+                        <h5>Apex Chart</h5>
+                    </div>
+                    <div class="apexChartBody">
+                        <div id="chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="pages mainBorder mb-3">
+                    <div class="sectionTitle p-3">
+                        <h5>Pages view by users</h5>
+                    </div>
+                    <div class="pagesBody pl-3 pr-3">
+                        <div class="pagesItems pt-3 pb-3 d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="img mr-2">
+                                    <img src="img/atom.svg" alt="">
+                                </div>
+                                <div class="itemName">
+                                    <h6 class="mb-0">Dastone-Admin Dashboard</h6>
+                                    <p class="mb-0 textMuted">analytic-index.html</p>
+                                </div>
+                            </div>
+                            <div class="badgeBtn">
+                                <a href="#">4.3k <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="pagesItems pt-3 pb-3 d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="img mr-2">
+                                    <img src="img/blocks.svg" alt="">
+                                </div>
+                                <div class="itemName">
+                                    <h6 class="mb-0">Materica Simple-Admin Dashboard</h6>
+                                    <p class="mb-0 textMuted">analytic-index.html</p>
+                                </div>
+                            </div>
+                            <div class="badgeBtn">
+                                <a href="#">3.7k <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="pagesItems pt-3 pb-3 d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="img mr-2">
+                                    <img src="img/cobweb.svg" alt="">
+                                </div>
+                                <div class="itemName">
+                                    <h6 class="mb-0">Crovex-Admin Dashboard</h6>
+                                    <p class="mb-0 textMuted">analytic-index.html</p>
+                                </div>
+                            </div>
+                            <div class="badgeBtn">
+                                <a href="#">2.9k <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="pagesItems pt-3 pb-3 d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="img mr-2">
+                                    <img src="img/rgb.svg" alt="">
+                                </div>
+                                <div class="itemName">
+                                    <h6 class="mb-0">Crovex-Admin Dashboard</h6>
+                                    <p class="mb-0 textMuted">analytic-index.html</p>
+                                </div>
+                            </div>
+                            <div class="badgeBtn">
+                                <a href="#">1.9k <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trafficSource mainBorder d-flex p-3">
+                    <div class="right align-self-center mr-2">
+                        <h2 class="mb-0">80</h2>
+                    </div>
+                    <div class="left">
+                        <span class="mb-2">Right now</span>
+                        <h5 class="mb-1">Traffic Sources</h5>
+                        <p class="mb-0 textMuted">It is a long established fact that a reader will be of a page when
+                            looking at its layout. <a href="#">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="channel mainBorder">
+                    <div class="sectionTitle p-3">
+                        <h5>Sessions by channel</h5>
+                    </div>
+                    <div class="channelBody p-3">
+                        <canvas id="myBar" height="223px"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="activity mainBorder">
+                    <div class="sectionTitle p-3">
+                        <h5>Activity</h5>
+                    </div>
+                    <div class="activityBody p-3">
+                        <div class="activityInfo d-flex justify-content-between mb-3">
+                            <div class="leftSide d-flex">
+                                <div class="icon mr-1">
+                                    <i class="far fa-user-circle mr-3"></i>
+                                </div>
+                                <p class="textMuted">
+                                    <span>Donald</span>
+                                    updated the status of 
+                                    <a href="#">Refund #1234</a> 
+                                    to awaiting customer response
+                                </p>
+                            </div>
+                            <div class="date">
+                                <small class="textMuted">10 min ago</small>
+                            </div>
+                        </div>
+                        <div class="activityInfo d-flex justify-content-between mb-3">
+                            <div class="leftSide d-flex">
+                                <div class="icon mr-1">
+                                    <i class="far fa-user-circle mr-3"></i>
+                                </div>
+                                <p class="textMuted">
+                                    <span>Donald</span>
+                                    updated the status of 
+                                    <a href="#">Refund #1234</a> 
+                                    to awaiting customer response
+                                </p>
+                            </div>
+                            <div class="date">
+                                <small class="textMuted">10 min ago</small>
+                            </div>
+                        </div>
+                        <div class="activityInfo d-flex justify-content-between mb-3">
+                            <div class="leftSide d-flex">
+                                <div class="icon mr-1">
+                                    <i class="far fa-user-circle mr-3"></i>
+                                </div>
+                                <p class="textMuted">
+                                    <span>Donald</span>
+                                    updated the status of 
+                                    <a href="#">Refund #1234</a> 
+                                    to awaiting customer response
+                                </p>
+                            </div>
+                            <div class="date">
+                                <small class="textMuted">10 min ago</small>
+                            </div>
+                        </div>
+                        <div class="activityInfo d-flex justify-content-between mb-3">
+                            <div class="leftSide d-flex">
+                                <div class="icon mr-1">
+                                    <i class="far fa-user-circle mr-3"></i>
+                                </div>
+                                <p class="textMuted">
+                                    <span>Donald</span>
+                                    updated the status of 
+                                    <a href="#">Refund #1234</a> 
+                                    to awaiting customer response
+                                </p>
+                            </div>
+                            <div class="date">
+                                <small class="textMuted">10 min ago</small>
+                            </div>
+                        </div>
+                        <div class="activityInfo d-flex justify-content-between mb-3">
+                            <div class="leftSide d-flex">
+                                <div class="icon mr-1">
+                                    <i class="far fa-user-circle mr-3"></i>
+                                </div>
+                                <p class="textMuted">
+                                    <span>Donald</span>
+                                    updated the status of 
+                                    <a href="#">Refund #1234</a> 
+                                    to awaiting customer response
+                                </p>
+                            </div>
+                            <div class="date">
+                                <small class="textMuted">10 min ago</small>
+                            </div>
+                        </div>
+                        <div class="activityInfo d-flex justify-content-between mb-3">
+                            <div class="leftSide d-flex">
+                                <div class="icon mr-1">
+                                    <i class="far fa-user-circle mr-3"></i>
+                                </div>
+                                <p class="textMuted">
+                                    <span>Donald</span>
+                                    updated the status of 
+                                    <a href="#">Refund #1234</a> 
+                                    to awaiting customer response
+                                </p>
+                            </div>
+                            <div class="date">
+                                <small class="textMuted">10 min ago</small>
+                            </div>
+                        </div>
+                        <div class="activityInfo d-flex justify-content-between mb-3">
+                            <div class="leftSide d-flex">
+                                <div class="icon mr-1">
+                                    <i class="far fa-user-circle mr-3"></i>
+                                </div>
+                                <p class="textMuted">
+                                    <span>Donald</span>
+                                    updated the status of 
+                                    <a href="#">Refund #1234</a> 
+                                    to awaiting customer response
+                                </p>
+                            </div>
+                            <div class="date">
+                                <small class="textMuted">10 min ago</small>
+                            </div>
+                        </div>
+                        <div class="activityInfo d-flex justify-content-between mb-3">
+                            <div class="leftSide d-flex">
+                                <div class="icon mr-1">
+                                    <i class="far fa-user-circle mr-3"></i>
+                                </div>
+                                <p class="textMuted">
+                                    <span>Donald</span>
+                                    updated the status of 
+                                    <a href="#">Refund #1234</a> 
+                                    to awaiting customer response
+                                </p>
+                            </div>
+                            <div class="date">
+                                <small class="textMuted">10 min ago</small>
+                            </div>
+                        </div>
+                        <div class="activityInfo d-flex justify-content-between mb-3">
+                            <div class="leftSide d-flex">
+                                <div class="icon mr-1">
+                                    <i class="far fa-user-circle mr-3"></i>
+                                </div>
+                                <p class="textMuted">
+                                    <span>Donald</span>
+                                    updated the status of 
+                                    <a href="#">Refund #1234</a> 
+                                    to awaiting customer response
+                                </p>
+                            </div>
+                            <div class="date">
+                                <small class="textMuted">10 min ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mb-3">
+                <div class="reports mainBorder">
+                    <div class="sectionTitle p-3">
+                        <h5>Browser user & Traffic Reports</h5>
+                    </div>
+                    <div class="reportsBody p-3">
+                        <div class="reportTable table-responsive">
+                            <table class="w-100">
+                                <thead>
+                                    <tr>
+                                        <th>Channel</th>
+                                        <th>Sessions</th>
+                                        <th>Prev.Period</th>
+                                        <th>% Change</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">Organic search</a></td>
+                                        <td>10853 <span class="textMuted">(52%)</span></td>
+                                        <td>566 <span class="textMuted">(92%)</span></td>
+                                        <td>52.80% <i class="fas fa-sort-up textSuccess"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Direct</a></td>
+                                        <td>2545 <span class="textMuted">(47%)</span></td>
+                                        <td>498 <span class="textMuted">(81%)</span></td>
+                                        <td>-17.80% <i class="fas fa-sort-down textDanger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Referal</a></td>
+                                        <td>1853 <span class="textMuted">(52%)</span></td>
+                                        <td>455 <span class="textMuted">(92%)</span></td>
+                                        <td>41.12% <i class="fas fa-sort-up textSuccess"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Referal</a></td>
+                                        <td>1853 <span class="textMuted">(52%)</span></td>
+                                        <td>455 <span class="textMuted">(92%)</span></td>
+                                        <td>41.12% <i class="fas fa-sort-up textSuccess"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-3">
+                <div class="reports mainBorder">
+                    <div class="sectionTitle p-3">
+                        <h5>Browser user & Traffic Reports</h5>
+                    </div>
+                    <div class="reportsBody p-3">
+                        <div class="reportTable table-responsive">
+                            <table class="w-100">
+                                <thead>
+                                    <tr>
+                                        <th>Browser</th>
+                                        <th>Sessions</th>
+                                        <th>Bounce Rate</th>
+                                        <th>Transactions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="d-flex">
+                                            <div class="img mr-2">
+                                                <img src="img/chrome.png" alt="">
+                                            </div> 
+                                            <span>Chorme</span>
+                                        </td>
+                                        <td>10853 <span class="textMuted">(52%)</span></td>
+                                        <td>52.80%</td>
+                                        <td>566 <span class="textMuted">(92%)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="d-flex">
+                                           <div class="img mr-2">
+                                            <img src="img/micro-edge.png" alt=""> 
+                                           </div>
+                                            <span>Microsoft Edge</span>
+                                        </td>
+                                        <td>2545 <span class="textMuted">(52%)</span></td>
+                                        <td>52.80%</td>
+                                        <td>566 <span class="textMuted">(92%)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="d-flex">
+                                            <div class="img mr-2">
+                                                <img src="img/opera.png" alt=""> 
+                                            </div>
+                                            <span>Internet Explorer</span>
+                                        </td>
+                                        <td>1853 <span class="textMuted">(52%)</span></td>
+                                        <td>52.80%</td>
+                                        <td>566 <span class="textMuted">(92%)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="d-flex">
+                                            <div class="img mr-2">
+                                                <img src="img/in-explorer.png" alt=""> 
+                                            </div>
+                                            <span>Opera</span>
+                                        </td>
+                                        <td>1958 <span class="textMuted">(52%)</span></td>
+                                        <td>52.80%</td>
+                                        <td>566 <span class="textMuted">(92%)</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer p-3">
+        <div class="copyRight d-flex justify-content-between">
+            <div class="year">
+                © 2020 Dastone
+            </div>
+            <div class="company">
+                Crafted with
+                <i class="fas fa-heart text-danger"></i>
+                by Mannatthemes
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <!-- Apex Charts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <!-- MDB for Chart -->
+    <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
