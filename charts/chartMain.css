@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.node{
+    background: darkgray;
+    padding: 10px;
+}
+
+.node span{
+    font-size: 17px;
+    color: #333;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+.node .buttons{
+    margin-top: 20px;
+}
+
+.node .buttons a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redBtn{
+    color: darkred;
+}
+
+.greenBtn{
+    color: darkgreen;
+}
